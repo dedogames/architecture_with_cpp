@@ -20,7 +20,17 @@ endif()
 
 MESSAGE("Installation path:" ${INSTALLATION_PATH})
 
-set(LIBRARIES_INCLUDE_PATH "usr/include")
-set(LIBRARIES_PATH "/usr/lib64")
+#################### Libraries used ######################
+
+#for linux/mac change path to where gtest was installed    
+set(LIBRARIES_INCLUDE_PATH "G:/tutor/libraries/include")
+set(LIBRARIES_PATH "G:/tutor/libraries/lib")
+  
+#gtest
+set(GTEST_INCLUDEDIR ${LIBRARIES_INCLUDE_PATH})
+include_directories(${GTEST_INCLUDEDIR})
+#set(GTEST_LIBRARY gtest) for Linux/Mac
+set(GTEST_LIBRARY ${LIBRARIES_PATH}/libgtest.a ${LIBRARIES_PATH}/libgtest_main.a) 
 
 add_subdirectory(src)
+add_subdirectory(test) 

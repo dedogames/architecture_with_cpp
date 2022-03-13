@@ -13,5 +13,5 @@ target_include_directories(great-design-cpp PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}
 set_target_properties(great-design-cpp PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${INSTALLATION_PATH}/)
 install(TARGETS great-design-cpp DESTINATION bin)
 
-#set(GreateDesignCPP_TARGET_LIBRARIES)
-#target_link_libraries(great-design-cpp ${GreateDesignCPP_TARGET_LIBRARIES})
+#create lib for tests
+add_library(GreateDesignCPP_static STATIC ${GreateDesignCPP_SOURCES} ${GreateDesignCPP_HEADERS} )
