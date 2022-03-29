@@ -9,7 +9,7 @@ namespace Solid
     {
         namespace BadApplication
         {
-            class Square : public Rectangle // Square isn't a rectangle
+            class Square : public Rectangle // Square is very smilar but isn't a rectangle.
             {
             public:
                 float get_area() override { return Rectangle::get_area(); }

@@ -7,7 +7,7 @@ namespace Solid
         class BackEndDeveloper
         {
         public:
-            void develop() { std::cout << "DependencyInversion::BackEndDeveloper::develop:: | I'll create some pages" << std::endl; }
+            void develop() { std::cout << "DependencyInversion::BackEndDeveloper::develop:: | I'll create process somes pages" << std::endl; }
         };
     }
 

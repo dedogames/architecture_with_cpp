@@ -1,0 +1,50 @@
+{
+    // F5 to execute project
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Application",
+            "type": "cppdbg",
+            "request": "launch",
+            //Add full path for debug aplication
+            // "program": "full_path\\template-source.exe"  Windows
+            // "program": "full_path\template-source"       Linux  
+            "program": "G:\\tutor\\architecture_with_cpp\\base\\build\\Debug\\template-source.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Habilitar a reformatação automática para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Application-Test",
+            "type": "cppdbg",
+            "request": "launch",
+            //Add full path for debug aplication
+            // "program": "full_path\\template-source.exe"  Windows
+            // "program": "full_path\template-source"       Linux/Mac 
+            "program": "G:\\tutor\\architecture_with_cpp\\base\\build\\Debug\\templateSource-test.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Habilitar a reformatação automática para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
